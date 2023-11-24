@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://duwom6ky2op2m"]
+
+[ext_resource type="PackedScene" uid="uid://lvs4t8anm0j" path="res://Scenes/Paddle.tscn" id="1_mjmv6"]
+[ext_resource type="Script" path="res://Scenes/AutomatedPaddle.gd" id="2_wfipq"]
+
+[node name="Paddle" instance=ExtResource("1_mjmv6")]
+script = ExtResource("2_wfipq")
