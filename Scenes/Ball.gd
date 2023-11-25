@@ -28,3 +28,14 @@ func _process(delta):
 		start_ball()
 	handle_out_of_bounds()
 	position += speed * delta
+
+
+func _on_area_2d_area_entered(_area: Area2D):
+	speed.x *= -1
+	speed *= 1.03
+	if speed.x > 0:
+		speed = speed.rotated(randf_range(-PI / 3, PI / 3))
+		speed.x = abs(speed.x)
+	else:
+		speed = speed.rotated(randf_range(-PI / 3, PI / 3))
+		speed.x = -abs(speed.x)

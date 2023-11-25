@@ -1,5 +1,5 @@
 extends Paddle
 
 
-func move_paddle(delta):
-	move_down(delta)
+func move_paddle(_delta):
+	pass
