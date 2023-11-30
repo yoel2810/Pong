@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3hy8de8mofd8"]
+
+[ext_resource type="Script" path="res://Scenes/ui.gd" id="1_gs7me"]
+[ext_resource type="FontFile" uid="uid://bd4pfiw0esrnq" path="res://Assets/Fonts/bit5x3.ttf" id="1_wx7cg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f5si6"]
+font = ExtResource("1_wx7cg")
+font_size = 120
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_gs7me")
+
+[node name="LeftPlayerScore" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.2
+anchor_right = 0.25
+anchor_bottom = 0.3
+offset_right = 10.0
+offset_bottom = 26.0
+size_flags_vertical = 1
+text = "0"
+label_settings = SubResource("LabelSettings_f5si6")
+
+[node name="RightPlayerScore" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.2
+anchor_right = 0.75
+anchor_bottom = 0.25
+offset_right = 10.0
+offset_bottom = 26.0
+size_flags_vertical = 1
+text = "0"
+label_settings = SubResource("LabelSettings_f5si6")

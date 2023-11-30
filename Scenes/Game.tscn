@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://f26ypqh6kjb4"]
+[gd_scene load_steps=6 format=3 uid="uid://f26ypqh6kjb4"]
 
 [ext_resource type="PackedScene" uid="uid://duwom6ky2op2m" path="res://Scenes/AutomatedPaddle.tscn" id="1_1crx0"]
 [ext_resource type="Script" path="res://Scenes/Game.gd" id="1_xtif8"]
 [ext_resource type="PackedScene" uid="uid://qmisjp3s5gov" path="res://Scenes/ControlledPaddle.tscn" id="2_mly5b"]
 [ext_resource type="PackedScene" uid="uid://cdmpdisglei4v" path="res://Scenes/Ball.tscn" id="3_geyqe"]
+[ext_resource type="PackedScene" uid="uid://d3hy8de8mofd8" path="res://Scenes/ui.tscn" id="5_re7ws"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_xtif8")
@@ -16,3 +17,5 @@ position = Vector2(50, 324)
 
 [node name="Ball" parent="." instance=ExtResource("3_geyqe")]
 position = Vector2(576, 324)
+
+[node name="UI" parent="." instance=ExtResource("5_re7ws")]
