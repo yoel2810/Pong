@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://db8ocf01eysnq"]
+
+[ext_resource type="PackedScene" uid="uid://qmisjp3s5gov" path="res://Scenes/ControlledPaddle.tscn" id="3_f732d"]
+[ext_resource type="PackedScene" uid="uid://cdmpdisglei4v" path="res://Scenes/Ball.tscn" id="4_liv5c"]
+[ext_resource type="PackedScene" uid="uid://d3hy8de8mofd8" path="res://Scenes/ui.tscn" id="5_0rmeb"]
+
+[node name="TwoPlayersLevel" type="Node2D"]
+
+[node name="PaddlePlayer" parent="." instance=ExtResource("3_f732d")]
+position = Vector2(50, 324)
+controlled_by_arrows = false
+
+[node name="PaddlePlayer2" parent="." instance=ExtResource("3_f732d")]
+position = Vector2(1102, 324)
+controlled_by_arrows = true
+
+[node name="Ball" parent="." instance=ExtResource("4_liv5c")]
+position = Vector2(576, 324)
+
+[node name="UI" parent="." instance=ExtResource("5_0rmeb")]

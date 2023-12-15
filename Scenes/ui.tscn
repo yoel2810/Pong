@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3hy8de8mofd8"]
+[gd_scene load_steps=6 format=3 uid="uid://d3hy8de8mofd8"]
 
 [ext_resource type="Script" path="res://Scenes/ui.gd" id="1_gs7me"]
 [ext_resource type="FontFile" uid="uid://bd4pfiw0esrnq" path="res://Assets/Fonts/bit5x3.ttf" id="1_wx7cg"]
@@ -6,6 +6,14 @@
 [sub_resource type="LabelSettings" id="LabelSettings_f5si6"]
 font = ExtResource("1_wx7cg")
 font_size = 120
+
+[sub_resource type="LabelSettings" id="LabelSettings_qyboj"]
+font = ExtResource("1_wx7cg")
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_whub3"]
+font = ExtResource("1_wx7cg")
+font_size = 50
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_gs7me")
@@ -33,3 +41,28 @@ offset_bottom = 26.0
 size_flags_vertical = 1
 text = "0"
 label_settings = SubResource("LabelSettings_f5si6")
+
+[node name="SpaceLabel" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -13.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press Space"
+label_settings = SubResource("LabelSettings_qyboj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOverLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_top = 0.6
+anchor_bottom = 0.6
+offset_right = 1152.0
+offset_bottom = 42.0
+text = "X Player won"
+label_settings = SubResource("LabelSettings_whub3")
+horizontal_alignment = 1
+vertical_alignment = 1
